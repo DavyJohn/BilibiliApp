@@ -6,12 +6,15 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.widget.ImageView;
 
 import com.example.bilibiliapp.R;
+import com.example.bilibiliapp.activitys.LoginActivtiy;
+import com.example.bilibiliapp.activitys.MainActivity;
 import com.example.bilibiliapp.utils.PreferenceUtils;
 
 import butterknife.BindView;
@@ -81,12 +84,12 @@ public class SplashActivity extends Activity
 
                 if (flag == 0)
                 {
-//                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
-//                    finish();
+                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                    finish();
                 } else
                 {
-//                    startActivity(new Intent(SplashActivity.this, LoginActivity.class));
-//                    finish();
+                    startActivity(new Intent(SplashActivity.this, LoginActivtiy.class));
+                    finish();
                 }
             }
         });
